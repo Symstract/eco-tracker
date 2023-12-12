@@ -8,7 +8,7 @@ Software engineering and modeling course project.
 
 1. Clone the repository
 2. In the frontend folder, run <code>npm install</code>
-3. Run <code>expo start</code>
+3. Run <code>npx expo start</code>
 4. Install Expo Go on your phone if you don't already have it
 5. Open Expo Go on your phone
 6. Scan the QR code in the terminal
