@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Link } from "expo-router";
-import SquareButton from "../../../components/SquareButton";
+import SquareLinkButton from "../../../components/SquareLinkButton";
 import CarIcon from "../../../assets/icons/car.svg";
 import RecycleIcon from "../../../assets/icons/recycle.svg";
 import LeafIcon from "../../../assets/icons/leaf.svg";
@@ -15,37 +14,40 @@ export default function Home() {
       <Text style={styles.subtitle}>What would you like to do this time?</Text>
       <View style={styles.buttons}>
         <View style={styles.buttonRow}>
-          <Link href="/co2-calculator" asChild>
-            <SquareButton
-              label="Add CO2 driving emissions"
-              icon={<CarIcon />}
-            />
-          </Link>
-          <Link href="/recycle" asChild>
-            <SquareButton
-              label="Find recycling instructions"
-              icon={<RecycleIcon />}
-            />
-          </Link>
+          <SquareLinkButton
+            href="/co2-calculator"
+            label="Add CO2 driving emissions"
+            icon={<CarIcon />}
+          />
+          <SquareLinkButton
+            href="/recycle"
+            label="Find recycling instructions"
+            icon={<RecycleIcon />}
+          />
         </View>
         <View style={styles.buttonRow}>
-          <Link href="/daily-activities" asChild>
-            <SquareButton label="Add daily activities" icon={<LeafIcon />} />
-          </Link>
-          <Link href="/locations" asChild>
-            <SquareButton
-              label="Find nearest recycling centre"
-              icon={<RecyclingManIcon />}
-            />
-          </Link>
+          <SquareLinkButton
+            href="/daily-activities"
+            label="Add daily activities"
+            icon={<LeafIcon />}
+          />
+          <SquareLinkButton
+            href="/locations"
+            label="Find nearest recycling centre"
+            icon={<RecyclingManIcon />}
+          />
         </View>
         <View style={styles.buttonRow}>
-          <Link href="/statistics" asChild>
-            <SquareButton label="See your statistics" icon={<BarChartIcon />} />
-          </Link>
-          <Link href="/settings" asChild>
-            <SquareButton label="Settings" icon={<CogIcon />} />
-          </Link>
+          <SquareLinkButton
+            href="/statistics"
+            label="See your statistics"
+            icon={<BarChartIcon />}
+          />
+          <SquareLinkButton
+            href="/settings"
+            label="Settings"
+            icon={<CogIcon />}
+          />
         </View>
       </View>
     </View>

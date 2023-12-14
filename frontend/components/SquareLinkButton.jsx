@@ -1,11 +1,14 @@
+import { Link } from "expo-router";
 import { Pressable, StyleSheet, Text } from "react-native";
 
-const SquareButton = ({ label, icon, onPress, onClick }) => {
+const SquareButton = ({ label, icon, href }) => {
   return (
-    <Pressable style={styles.button} onPress={onPress} onClick={onClick}>
-      <Text style={styles.text}>{label}</Text>
-      {icon}
-    </Pressable>
+    <Link href={href} asChild>
+      <Pressable style={styles.button}>
+        <Text>{label}</Text>
+        {icon}
+      </Pressable>
+    </Link>
   );
 };
 
@@ -19,9 +22,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 12,
     backgroundColor: "#C0CCAA",
-  },
-  text: {
-    color: "#000",
   },
 });
 
