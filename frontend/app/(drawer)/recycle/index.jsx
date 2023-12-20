@@ -17,21 +17,18 @@ export default function Recycle() {
       <View style={styles.buttons}>
         <View style={styles.buttonRow}>
           <RecycleButton
-            href="/recycle"
             label="Bio"
             //icon={<CarIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for bio waste..."
           />
           <RecycleButton
-            href="/recycle"
             label="Paper"
             //icon={<RecycleIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for paper waste..."
           />
           <RecycleButton
-            href="/recycle"
             label="Carton"
             //icon={<RecycleIcon />}
             onPress={toggleModal}
@@ -40,21 +37,18 @@ export default function Recycle() {
         </View>
         <View style={styles.buttonRow}>
           <RecycleButton
-            href="/recycle"
             label="Glass"
             //icon={<LeafIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for glass waste..."
           />
           <RecycleButton
-            href="/recycle"
             label="Metal"
             //icon={<RecyclingManIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for metal waste..."
           />
           <RecycleButton
-            href="/recycle"
             label="Plastic"
             //icon={<RecyclingManIcon />}
             onPress={toggleModal}
@@ -63,21 +57,18 @@ export default function Recycle() {
         </View>
         <View style={styles.buttonRow}>
           <RecycleButton
-            href="/recycle"
             label="Mixed"
             //icon={<BarChartIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for mixed waste..."
           />
           <RecycleButton
-            href="/recycle"
             label="Hazardous"
             //icon={<CogIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for hazardous waste..."
           />
           <RecycleButton
-            href="/recycle"
             label="Batteries"
             //icon={<RecyclingManIcon />}
             onPress={toggleModal}
@@ -86,21 +77,18 @@ export default function Recycle() {
         </View>
         <View style={styles.buttonRow}>
           <RecycleButton
-            href="/recycle"
             label="Electrical"
             //icon={<BarChartIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for electrical waste..."
           />
           <RecycleButton
-            href="/recycle"
             label="Bottles"
             //icon={<CogIcon />}
             onPress={toggleModal}
             instructions="Recycling instructions for bottles and cans..."
           />
           <RecycleButton
-            href="/recycle"
             label="Other"
             //icon={<RecyclingManIcon />}
             onPress={toggleModal}
