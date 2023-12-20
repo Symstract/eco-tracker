@@ -85,15 +85,15 @@ export default function CO2Calculator() {
       editable={false}
     />
 
-<TouchableOpacity style={styles.link} onPress={() => console.log("Weekly emissions")}>
-  <Text style={styles.linkText}>View your weekly emissions</Text>
-</TouchableOpacity>
-<TouchableOpacity style={styles.link} onPress={() => console.log("Yearly emissions")}>
-  <Text style={styles.linkText}>View your yearly emissions</Text>
-</TouchableOpacity>
-<TouchableOpacity style={styles.link} onPress={() => console.log("All time emissions")}>
-  <Text style={styles.linkText}>View your all-time emissions</Text>
-</TouchableOpacity>
+    <TouchableOpacity style={styles.link} onPress={() => console.log("Weekly emissions")}>
+      <Text style={styles.linkText}>View your weekly emissions</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.link} onPress={() => console.log("Yearly emissions")}>
+      <Text style={styles.linkText}>View your yearly emissions</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.link} onPress={() => console.log("All time emissions")}>
+      <Text style={styles.linkText}>View your all-time emissions</Text>
+    </TouchableOpacity>
 
   
       <Modal
